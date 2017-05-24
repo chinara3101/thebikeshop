@@ -1,0 +1,45 @@
+$colorsea-green: #63c6ae
+$color-dark: #242a2c
+$color-txt: #a3a9ae
+$black_txt: #444
+$titlefont: 'Sintony', sans-serif
+
+
+
+
+
+
+
+=position($top,$right,$bottom,$left)
+	position: absolute
+	left: $left
+	right: $right
+	top: $top
+	bottom: $bottom
+
+=placeholder()
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+
+
+
+=tablet
+	@media screen and (max-width: 1100px)
+		@content		
+=sm
+	@media screen and (max-width: 992px)
+		@content
+=xs
+	@media screen and (max-width: 768px)
+		@content
+
+=mobile
+	@media screen and (max-width: 460px)
+		@content
+
