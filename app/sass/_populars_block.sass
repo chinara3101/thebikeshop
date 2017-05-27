@@ -1,0 +1,119 @@
+.populars
+	width: 100%
+	display: flex
+	margin: 0 0 100px 0
+	flex-wrap: wrap
+.popular
+	width: 31%
+	padding: 5px 30px 0 30px
+	margin-left: 2%
+	text-align: left
+	+xs
+		width: 48%
+	+mobile
+		width: 90%
+		margin: 0 5% 10px 5%
+.popular:first-child
+	margin-left: 0
+.popular__link
+	display: block
+	text-decoration: none
+.popular_photo
+	width: 100%
+	height: auto
+	display: block
+.popular__brand
+	display:  block
+	font-size: 15px
+	line-height: 21px
+	font-weight: 700
+	text-transform: uppercase
+	margin: 0
+	padding: 4px 0 0 0 	
+.popular__price
+	display: block
+	font-size: 15px
+	line-height: 32px
+	font-weight: 400
+	text-transform: uppercase
+	margin: 0
+	padding: 0
+.btn__buy
+	text-decoration: none
+	border: none
+	border-radius: 8px
+	font-size: 12px
+	line-height: 32px
+	font-weight: 700
+	text-transform: uppercase
+	display: inline-block
+	margin: -56px -45px 0 0
+	padding: 6px 33px 6px 32px
+	color: #fff
+	background: #b7b7b7
+	text-align: center
+	float: right
+	+tablet
+		margin: 0 0 10px  0 
+.btn__buy:hover
+	background: #000
+	color: $coloryellow
+.jq-selectbox 
+	width: 153px
+	float: right
+	margin: -56px 48px 0 0
+	+tablet
+		margin: 0 0 10px  0 
+.jq-selectbox__dropdown
+	width: 91%  !important
+	box-shadow: none
+.jq-selectbox.__dropdown .jq-selectbox__select 
+	border: 1px solid #dadada
+	box-shadow: none
+.jq-selectbox__select
+	height: 41px
+	padding: 5px  22px 0 17px
+	margin: 0 10px 0 0
+	border: 1px solid #dadada
+	border-radius: 7px
+	background: none
+	box-shadow: none
+.jq-selectbox__select:active 
+	box-shadow: none
+	border-top: none	
+.jq-selectbox__select:hover 
+	background: none
+	border: 1px solid #ccc
+.jq-selectbox__select:focus
+	background: none
+.jq-selectbox.focused.jq-selectbox__select	
+	background: none
+	border: none
+.jq-selectbox__select-text
+	text-transform: uppercase
+	color: #000
+.jq-selectbox__trigger
+	width: 20px
+	border-left: none
+.jq-selectbox__trigger-arrow
+	top: 6px
+	right: 14px
+	width: 20px
+	height: 26px
+	border-top: none
+	border-right: none
+	border-left: none
+	background-image:  url(../img/arrow-select.png)
+	background-repeat: no-repeat
+.jq-selectbox li
+	white-space: pre-wrap
+	text-transform: uppercase
+	color: #000
+.jq-selectbox li.selected,
+.jq-selectbox li:hover 
+	background: transparent	
+.jq-selectbox__search input
+	background: transparent
+
+
+

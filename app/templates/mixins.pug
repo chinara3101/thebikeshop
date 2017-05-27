@@ -1,0 +1,23 @@
+mixin category(item)
+	.category
+		a.category__link
+			img.category__photo(src=`upload/${item.image}`, width="348", height="290", alt="" )
+			span.br_hover
+		.category_txt
+			h4.category__title #{item.title}
+			p.category__description #{item.description}
+			a.btn__gotostore Go to store
+			
+			
+
+mixin popular(item)
+	.popular
+		a.popular__link
+			img.popular_photo( src=`upload/${item.image}`, width="488", height="390", alt="")
+		span.popular__brand #{item.brand}
+		span.popular__price #{item.price}		
+		a.btn__buy Buy
+		select.product_category 
+			option option-1
+			option option-2
+			option option-3

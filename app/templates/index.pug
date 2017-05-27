@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+	head
+		include head.pug
+	body
+		include vars.pug
+		include mixins.pug
+		.categoies_block
+			.categoies_block__container
+				h3.title_block categories
+				.categories
+					each item in categoies_item
+						+category(item)
+		.populars_block.container
+			h3.title_block popular bikes
+			.populars
+				each item in populars_item
+					+popular(item)
+					
+
+
+	<script src="vendor/jquery-3.2.0.min.js"></script>
+	<script src="vendor/fomstyle/jquery.formstyler.min.js"></script>  
+	<script src="js/core.js"></script>
+
